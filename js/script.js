@@ -73,15 +73,17 @@ function showData() {
             <th> </th>
             <th> </th>
               </tr>`
-        tablehead.innerHTML = str;
+        
 
         strbody += `<tr>
         <td>${bookmarks[i].bookmarkInput}</td> 
         <td><a href='${bookmarks[i].urlInput}' target="_blank"> <i class="fas fa-external-link-square-alt text-light"></i> </a></td>
         <td> <button onclick="deleteBookmarl(${i})" class="btn btn-danger del ">Delete</button></td>
         </tr>`
-        thebody.innerHTML = strbody;
+        
     }
+    tablehead.innerHTML = str;
+    thebody.innerHTML = strbody;
 
 }
 
